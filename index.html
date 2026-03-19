@@ -6,6 +6,8 @@
     <title>তোফাজ্জুল ফার্নিচার - অর্ডার ম্যানেজমেন্ট</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <style>
         /* 🟢 High-Contrast Material Design 3 Light Theme */
@@ -481,7 +483,7 @@
         function checkAuth() {
             if(isAppUnlocked) {
                 document.getElementById('loginScreen').style.display = 'none';
-                document.getElementById('mainApp').style.display = 'block'; // 🟢 FIXED THE BUG HERE (changed from flex to block)
+                document.getElementById('mainApp').style.display = 'block'; 
                 loadDashboardData();
             } else {
                 document.getElementById('loginScreen').style.display = 'flex';
@@ -847,7 +849,7 @@
                 
                 <div style="display:flex; justify-content:flex-end; margin-top: 56px; padding-right: 20px;">
                     <div style="text-align:center;">
-                        <div class="signature-box" style="font-family: cursive, sans-serif; font-size: 28px; color: var(--text-color); padding-bottom: 8px; margin-bottom: 8px; width: 180px; border-bottom: 2px dashed var(--text-muted);">Tofazzul</div>
+                        <div class="signature-box" style="font-family: 'Dancing Script', cursive; font-size: 36px; color: var(--text-color); padding-bottom: 8px; margin-bottom: 8px; width: 180px; border-bottom: 2px dashed var(--text-muted); line-height: 1;">Tofazzul</div>
                         <div style="font-weight: 600; color: var(--text-muted); font-size: 16px;">স্বাক্ষর</div>
                         <div style="font-size: 14px; color: var(--text-muted); margin-top: 6px;">তারিখ: ${new Date().toLocaleDateString('bn-BD')}</div>
                     </div>
